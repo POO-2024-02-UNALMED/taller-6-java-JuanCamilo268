@@ -1,4 +1,6 @@
 package vehiculos;
+import vehiculos.Pais;
+
 
 public class Fabricante {
     private static Fabricante[] lista = new Fabricante[0];
