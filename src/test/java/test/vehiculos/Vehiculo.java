@@ -1,4 +1,4 @@
-package test.vehiculos;
+package vehiculos;
 
 public class Vehiculo {
     private static int autos = 0;
