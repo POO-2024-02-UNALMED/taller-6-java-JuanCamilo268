@@ -1,4 +1,5 @@
 package vehiculos;
+import vehiculos.Fabricante;
 
 public class Vehiculo {
     private static int autos = 0;
