@@ -14,5 +14,6 @@ public class Automovil extends Vehiculo {
         this.fabricante = fabricante;
         this.puestos = puestos;
         Vehiculo.cantidadVehiculos ++;
+        Vehiculo.auto();
     }
 }
