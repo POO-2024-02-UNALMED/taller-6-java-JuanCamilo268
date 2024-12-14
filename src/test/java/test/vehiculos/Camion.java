@@ -1,4 +1,4 @@
-package test.vehiculos;
+package vehiculos;
 
 public class Camion extends Vehiculo{
     private int ejes;
