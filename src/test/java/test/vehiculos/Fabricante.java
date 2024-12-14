@@ -1,4 +1,4 @@
-package test.vehiculos;
+package vehiculos;
 
 public class Fabricante {
     private static Fabricante[] lista = new Fabricante[0];
