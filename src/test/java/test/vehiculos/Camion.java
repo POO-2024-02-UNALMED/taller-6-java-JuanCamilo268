@@ -13,7 +13,8 @@ public class Camion extends Vehiculo{
         this.traccion = "4X2";
         this.fabricante = fabricante;
         this.ejes = ejes;
-        cantidadVehiculos++;
+        Vehiculo.cantidadVehiculos++;
+        Vehiculo.camion();
     }
 
     public void setEjes(int ejes){this.ejes = ejes;}
