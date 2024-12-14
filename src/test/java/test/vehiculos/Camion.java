@@ -1,4 +1,4 @@
 package test.vehiculos;
 
-public class Camion {
+public class Camion extends Vehiculo{
 }
