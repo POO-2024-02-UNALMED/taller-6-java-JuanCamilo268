@@ -1,4 +1,6 @@
 package vehiculos;
+import vehiculos.Vehiculo;
+import vehiculos.Fabricante;
 
 public class Camioneta extends Vehiculo{
     private boolean volco;
