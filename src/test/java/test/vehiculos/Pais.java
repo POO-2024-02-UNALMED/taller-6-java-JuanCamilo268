@@ -1,4 +1,4 @@
-package test.vehiculos;
+package vehiculos;
 import java.util.ArrayList;
 
 public class Pais {
