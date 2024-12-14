@@ -14,6 +14,7 @@ public class Camioneta extends Vehiculo{
         this.fabricante = fabricante;
         this.volco = volco;
         Vehiculo.cantidadVehiculos++;
+        Vehiculo.camioneta();
     }
 
     public void setVolco(boolean volco){this.volco = volco;}
