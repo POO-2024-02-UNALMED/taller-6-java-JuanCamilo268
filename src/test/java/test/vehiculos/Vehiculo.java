@@ -1,6 +1,9 @@
 package test.vehiculos;
 
 public class Vehiculo {
+    private static int autos = 0;
+    private static int camiones = 0;
+    private static int camionetas = 0;
     protected static int cantidadVehiculos;
     protected String placa;
     protected int puertas;
@@ -43,4 +46,13 @@ public class Vehiculo {
     public String getTraccion(){return traccion;}
     public Fabricante getFabricante(){return fabricante;}
     public static int getCantidadVehiculos(){return cantidadVehiculos;}
+
+    public static void auto(){autos ++;}
+    public static void camion(){camiones++;}
+    public static void camioneta(){camionetas++;}
+    public static String vehiculosPorTipo(){return "Automoviles: " + autos + "\n" +
+            "Camionetas: " + camionetas + "\n" +
+            "Camiones: " + camiones;}
+
+
 }
