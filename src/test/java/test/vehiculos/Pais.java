@@ -1,5 +1,4 @@
 package vehiculos;
-import java.util.ArrayList;
 
 public class Pais {
     private static Pais[] lista = new Pais[0];
