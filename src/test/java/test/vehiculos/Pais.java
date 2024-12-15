@@ -1,7 +1,7 @@
 package vehiculos;
 
 public class Pais {
-    private static Pais[] lista = new Pais[0];
+    private static Pais[] lista = new Pais[1];
     private String nombre;
     public int exportacion = 0;
 
@@ -21,7 +21,7 @@ public class Pais {
     public String getNombre(){return nombre;}
 
     public static Pais paisMasVendedor(){
-        Pais potencia = lista[0];
+        Pais potencia = null;
         for (Pais pais: lista) {
             if (pais.exportacion > potencia.exportacion) {
                 potencia = pais;
