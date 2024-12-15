@@ -5,7 +5,7 @@ public class Vehiculo {
     private static int autos = 0;
     private static int camiones = 0;
     private static int camionetas = 0;
-    protected static int cantidadVehiculos;
+    private static int cantidadVehiculos;
     protected String placa;
     protected int puertas;
     protected double velocidadMaxima;
@@ -49,6 +49,7 @@ public class Vehiculo {
     public Fabricante getFabricante(){return fabricante;}
     public static int getCantidadVehiculos(){return cantidadVehiculos;}
 
+    public static void otro(){cantidadVehiculos ++;}
     public static void auto(){autos ++;}
     public static void camion(){camiones++;}
     public static void camioneta(){camionetas++;}
