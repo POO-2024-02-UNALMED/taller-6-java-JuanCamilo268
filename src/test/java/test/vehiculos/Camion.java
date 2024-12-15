@@ -4,6 +4,7 @@ import vehiculos.Fabricante;
 
 public class Camion extends Vehiculo{
     private int ejes;
+    protected static int cantidadVehiculos;
 
     public Camion(String placa, String nombre, double precio, double peso, Fabricante fabricante, int ejes) {
         this.placa = placa;
@@ -15,8 +16,8 @@ public class Camion extends Vehiculo{
         this.traccion = "4X2";
         this.fabricante = fabricante;
         this.ejes = ejes;
-        Vehiculo.otro();
-        Vehiculo.camion();
+        cantidadVehiculos ++;
+        this.fabricante.venta();
     }
 
     public void setEjes(int ejes){this.ejes = ejes;}
