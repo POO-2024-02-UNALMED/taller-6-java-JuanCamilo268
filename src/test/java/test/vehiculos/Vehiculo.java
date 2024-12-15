@@ -1,11 +1,14 @@
 package vehiculos;
 import vehiculos.Fabricante;
+import vehiculos.Automovil;
+import vehiculos.Camion;
+import vehiculos.Camioneta;
 
 public class Vehiculo {
     private static int autos = 0;
     private static int camiones = 0;
     private static int camionetas = 0;
-    private static int cantidadVehiculos;
+    protected static int cantidadVehiculos;
     protected String placa;
     protected int puertas;
     protected double velocidadMaxima;
@@ -49,13 +52,10 @@ public class Vehiculo {
     public Fabricante getFabricante(){return fabricante;}
     public static int getCantidadVehiculos(){return cantidadVehiculos;}
 
-    public static void otro(){cantidadVehiculos ++;}
-    public static void auto(){autos ++;}
-    public static void camion(){camiones++;}
-    public static void camioneta(){camionetas++;}
-    public static String vehiculosPorTipo(){return "Automoviles: " + autos + "\n" +
-            "Camionetas: " + camionetas + "\n" +
-            "Camiones: " + camiones;}
+
+    public static String vehiculosPorTipo(){return "Automoviles: " + Automovil.cantidadVehiculos + "\n" +
+            "Camionetas: " + Camioneta.cantidadVehiculos + "\n" +
+            "Camiones: " + Camion.cantidadVehiculos;}
 
 
 }
