@@ -3,21 +3,25 @@ import vehiculos.Pais;
 
 
 public class Fabricante {
-    private static Fabricante[] lista = new Fabricante[0];
+    private static Fabricante[] lista = {null};
     private String nombre;
     private Pais pais;
-    private int ventas;
+    private int ventas = 0;
 
     public Fabricante(String nombre, Pais pais) {
         this.nombre = nombre;
         this.pais = pais;
-        int x = lista.length;
-        Fabricante[] A = new Fabricante[x+1];
-        for (int i = 0; i < lista.length + 1; i++ ){
-            A[i] = lista[i];
+        if (lista[0] == null){
+            lista[0] = this;
+        }else {
+            int x = lista.length;
+            Fabricante[] A = new Fabricante[x + 1];
+            for (int i = 0; i < lista.length; i++) {
+                A[i] = lista[i];
+            }
+            A[x] = this;
+            lista = A;
         }
-        A[x] = this;
-        lista = A;
     }
 
     public void setNombre(String nombre){this.nombre = nombre;}
@@ -33,9 +37,11 @@ public class Fabricante {
     public static Fabricante fabricaMayorVentas(){
         Fabricante potencia = null;
         for (Fabricante fabrica: lista) {
-            if (fabrica.ventas > potencia.ventas) {
-                potencia = fabrica;
-            }
+            if (potencia != null){
+                if (fabrica.ventas > potencia.ventas) {
+                    potencia = fabrica;
+                }
+            }else{potencia = lista[0];}
         }
         return potencia;
     }
