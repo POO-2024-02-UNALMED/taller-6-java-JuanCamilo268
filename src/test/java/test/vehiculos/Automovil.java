@@ -15,7 +15,11 @@ public class Automovil extends Vehiculo {
         this.traccion = "FWD";
         this.fabricante = fabricante;
         this.puestos = puestos;
-        Vehiculo.cantidadVehiculos ++;
+        Vehiculo.otro();
         Vehiculo.auto();
+        this.fabricante.venta();
     }
+    public void setPuestos(int puestos){this.puestos = puestos;}
+
+    public int getPuestos(){return puestos;}
 }
