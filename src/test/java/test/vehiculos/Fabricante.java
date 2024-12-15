@@ -31,7 +31,7 @@ public class Fabricante {
         pais.exportacion ++;
     }
     public static Fabricante fabricaMayorVentas(){
-        Fabricante potencia = lista[0];
+        Fabricante potencia = null;
         for (Fabricante fabrica: lista) {
             if (fabrica.ventas > potencia.ventas) {
                 potencia = fabrica;
